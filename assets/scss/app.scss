@@ -1,0 +1,84 @@
+// Make sure the charset is set appropriately
+// @charset "UTF-8";
+
+// first import your own settings
+
+// @import 
+
+// then import foundation
+
+
+// 
+
+.tbw_head {
+/* 	height: 200px; */
+	font-family: "alternate-gothic-no-1-d",sans-serif;
+	text-transform: uppercase;
+	background-color: #000;
+	height: 5em;
+	margin-top: 55px;
+}
+.tbw_head a, .tbw_head a:visited{ color:#fff;}
+.tbw_head a:hover { color:red;}
+
+.tbw_head a {margin: 0 0;}
+
+.tbw_nav_social, .tbw_nav {
+	color: #fff;
+	list-style: none;
+}
+
+.tbw_nav > li {	
+	margin-left: .4em;
+	font-size: 1.3em;
+	letter-spacing: .2em;
+}
+
+.tbw_logo { margin-top: -1.4em; }
+
+.tbw_nav, .tba_nav .divider{
+	padding: 24px 0;
+}
+
+.tbw_nav .divider{
+	  margin-top: 9px;
+	  width: 14px; 
+	  height: 15px; 
+	  background: url(bullet.png);
+	  text-indent: 100%; 
+	  white-space: nowrap; 
+	  overflow: hidden;
+}
+
+.tbw_nav_signup {
+	font-size: .5em;
+	color: #fff;
+}
+.tbw_nav_signup span {
+	color: red;
+}
+.tbw_nav_search {padding: 20px 0}
+
+// Footer Styles
+.tbw_footer {
+	color: #fff;
+	background-color: #000;
+}
+
+.tbw_footer h3 {
+	text-transform: uppercase;
+	font-size: .85em;
+	color: red;
+}
+.tbw_social_ft {
+	list-style: none;
+}
+
+.tbw_siteinfo {
+	color: red;
+	font-family: "alternate-gothic-no-1-d",sans-serif;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 10px;
+	background-color: #000;
+}
