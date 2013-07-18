@@ -34,7 +34,10 @@
 .tbw_head a, .tbw_head a:visited{ color:#fff;}
 .tbw_head a:hover { color:red;}
 
-.tbw_head a {margin: 0 0;}
+.tbw_head a {
+	margin: 0 0;
+	font-weight: normal;
+}
 
 .tbw_nav_social, .tbw_nav {
 	color: #fff;
