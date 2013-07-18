@@ -1,0 +1,37 @@
+/*  
+Theme Name: BoxOne WordPress
+Theme URI: http://www.mojo-themes.com/user/brankocee
+Version: 3.0
+Description: Designed & Developed by <a href="http://www.mojo-themes.com/user/brankocee">HB-Themes</a>.
+Author: HB-Themes
+Author URI: http://www.mojo-themes.com/user/brankocee
+
+	Copyright: (c) 2012 Branko Conjic & Hristina Zlateska.
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+.hidden, .none {
+	display: none
+}
+.alignleft {
+	float: left;
+	margin: 20px 20px 20px 0;
+}
+.alignright {
+	float: right;
+	margin: 20px 0 20px 20px;
+}
+.floatleft {
+	float:left;
+}
+.floatright {
+	float:right;
+}
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
