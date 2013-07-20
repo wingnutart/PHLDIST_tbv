@@ -1,0 +1,8 @@
+Some possible fonts for the Bay Web site.
+
+Bold Sans-serif distressed - 
+* Veneer (it's really heavy, but it seems like it's a good match for the font they used)
+
+Light Transitional all caps
+* Great Primer from Typekit
+* Georgia is a fine fall back
