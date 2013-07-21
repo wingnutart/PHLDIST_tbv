@@ -1,0 +1,8 @@
+#bg-about {
+	height:985px;
+}
+
+html.touch #bg-about {
+    background-image: url(img/about.png);
+    background-size: cover;
+}

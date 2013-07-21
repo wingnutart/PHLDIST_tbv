@@ -7,6 +7,14 @@
 
 // then import foundation
 
+//Trying to make hw-parallax work
+
+html,body {
+    height: 100%;
+}
+
+
+
 // 
 
 @font-face {
@@ -67,3 +75,16 @@
 // individual pages
 // index page
 @import "includes/_index.scss";
+
+// About page
+@import "includes/_about.scss";
+
+// Mixology Page
+@import "includes/_mixology.scss";
+
+// Media Page
+@import "includes/_media.scss";
+
+// Contact page
+/* import "includes/_contact.scss"; */
+
