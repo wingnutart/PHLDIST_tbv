@@ -22,61 +22,7 @@
 }
 
 // Nav bar styles
-
-.tbw_head {
-/* 	height: 200px; */
-	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
-	text-transform: uppercase;
-	background-color: #000;
-	height: 5em;
-	margin-top: 55px;
-}
-.tbw_head a, .tbw_head a:visited{ color:#fff;}
-.tbw_head a:hover { color:red;}
-
-.tbw_head a {
-	margin: 0 0;
-	font-weight: normal;
-}
-
-.tbw_nav_social, .tbw_nav {
-	color: #fff;
-	list-style: none;
-}
-
-.tbw_nav > li {	
-	margin-left: .4em;
-	font-size: 1em;
-	letter-spacing: .2em;
-}
-
-.tbw_logo { margin-top: -1.4em; }
-
-.tbw_nav, .tba_nav .divider{
-	padding: 24px 0;
-}
-
-.tbw_nav .divider{
-	  margin-top: 9px;
-	  width: 14px; 
-	  height: 15px; 
-	  background: url(bullet.png);
-	  text-indent: 100%; 
-	  white-space: nowrap; 
-	  overflow: hidden;
-	  @media screen and (max-width: 870px) {
-		  display:none;
-	  }
-}
-
-.tbw_nav_signup {
-	font-size: .5em;
-	color: #fff;
-}
-.tbw_nav_signup span {
-	color: red;
-}
-.tbw_nav_search {padding: 20px 0}
+@import "_nav.scss";
 
 // Footer Styles
 .tbw_footer {
@@ -100,16 +46,6 @@
 	font-size: 1em;
 	margin-top: 10px;
 	background-color: #000;
-}
-
-h2 {
-	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
-	text-transform: uppercase;
-}
-
-h2 span {
-	font-family: georgia, serif;
-	font-weight: normal;
 }
 
 // individual pages

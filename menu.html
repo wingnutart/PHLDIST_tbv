@@ -1,427 +1,146 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width">
 
 <!-- @reload -->
 
 <title>Crab menu on TBW site </title>
 
+        <meta charset="utf-8">
 <!-- @stylesheet assets/css/normalize -->
 <!-- @stylesheet foundation -->
-<!-- stylesheet assets/scss/_settings.css -->
-<link rel='stylesheet' href='assets/scss/app.css'>
 <!-- @stylesheet hw-parallax -->
-<!-- @stylesheet step4 -->
+<!-- @stylesheet fromBaseStation/offcanvas.css -->
+<!-- @stylesheet assets/scss/app.css -->
 
 <!-- @javascript assets/js/vendor/modernizr.js -->
 
-<style>
-.tbw_ddnav{
-	color: #FFF;
-	background-color: #000;
-}
 
-.tbw_nav{
-	list-style: none;
-	margin: 0 0;
-}
-
-li.tbw_nav_page{
-	font-size: 2em;
-	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
-	text-transform: uppercase;
-	margin: 2em 0;
-	transform: (-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-/* From off-canvas-demo */
-
-.block {
-  position: relative;
-  margin: 0 auto;
-  padding: 1.5em 1.25em;
-  max-width: 60em;
-}
-
-.close-btn {
-  display: block;
-  width: 2.625em;
-  height: 2.25em;
-  padding: 0;
-  border: 0;
-  outline: none;
-  background: #333333 url("<!-- @path close-btn.svg -->") left center no-repeat;
-  background-size: 1.875em 1.875em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg .close-btn {
-  background-image: url("<!-- @path close-btn.png -->");
-}
-.close-btn:focus, .close-btn:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-.nav-btn {
-  display: block;
-  width: 2.625em;
-  height: 2.25em;
-  padding: 0;
-  border: 0;
-  outline: none;
-  background: #333333 url("<!-- @path nav-icon.svg -->") left center no-repeat;
-  background-size: 1.875em 1.5em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.no-svg .nav-btn {
-  background-image: url("<!-- @path nav-icon.png -->");
-}
-.nav-btn:hover, .nav-btn:focus {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-#nav {
-  z-index: 200;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  color: #fff;
-}
-#nav .close-btn {
-  display: none;
-}
-#nav .block-title {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-#nav .block {
-  z-index: 2;
-  position: relative;
-  padding: 0.75em 1.25em;
-  background: #333333;
-}
-#nav ul {
-  *zoom: 1;
-  display: block;
-}
-#nav ul:before, #nav ul:after {
-  content: "";
-  display: table;
-}
-#nav ul:after {
-  clear: both;
-}
-#nav li {
-  display: block;
-}
-#nav li a {
-  display: block;
-  color: #ccc;
-  font-size: 0.875em;
-  line-height: 1.28571em;
-  font-weight: bold;
-  outline: none;
-}
-#nav li a:focus, #nav li a:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.1);
-}
-#nav li.is-active a {
-  color: #fff;
-}
-
-#top {
-  z-index: 100;
-  position: relative;
-  color: #fff;
-  background: #333333;
-}
-#top .block-title {
-  margin: 0;
-  font-size: 1.875em;
-  line-height: 1.2em;
-  text-align: center;
-  white-space: nowrap;
-}
-#top .nav-btn {
-  position: absolute;
-  top: 1.5em;
-  left: 1.875em;
-}
-
-@media screen and (min-width: 45.0625em) {
-  #top .nav-btn {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-
-  #nav .close-btn {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  #nav .block-title {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  #nav ul {
-    text-align: center;
-    white-space: nowrap;
-  }
-  #nav li {
-    display: inline-block;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  #nav li:last-child {
-    border-right: none;
-  }
-  #nav li a {
-    padding: 0.42857em 0.85714em;
-  }
-}
-@media screen and (max-width: 45em) {
-  #nav {
-    position: absolute;
-    top: 0;
-    padding-top: 5.25em;
-  }
-  #nav:not(:target) {
-    z-index: 1;
-    height: 0;
-  }
-  #nav:target .close-btn {
-    display: block;
-  }
-  #nav .close-btn {
-    position: absolute;
-    top: -3.75em;
-    left: 1.875em;
-  }
-  #nav .block {
-    position: relative;
-    padding: 0;
-  }
-  #nav li {
-    position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  #nav li:last-child {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-  #nav li.is-active:after {
-    z-index: 50;
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -0.03125em;
-    margin-top: -0.625em;
-    border-top: 0.625em transparent solid;
-    border-bottom: 0.625em transparent solid;
-    border-right: 0.625em white solid;
-  }
-  #nav li a {
-    padding: 0.85714em 2.14286em;
-  }
-
-  .js-ready #nav {
-    height: 100%;
-    width: 70%;
-    background: #333333;
-    -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-    box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25);
-  }
-  .js-ready #nav .block {
-    background: transparent;
-  }
-  .js-ready #nav .close-btn {
-    display: block;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    opacity: 0.7;
-  }
-  .js-ready #nav .close-btn:focus, .js-ready #nav .close-btn:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-  }
-
-  .js-ready #nav {
-    left: -70%;
-  }
-  .js-ready #inner-wrap {
-    left: 0;
-  }
-
-  .js-nav #inner-wrap {
-    left: 70%;
-  }
-
-  .csstransforms3d.csstransitions.js-ready #nav {
-    left: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    -moz-transform: translate3d(-100%, 0, 0);
-    -ms-transform: translate3d(-100%, 0, 0);
-    -o-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  .csstransforms3d.csstransitions.js-ready #inner-wrap {
-    left: 0 !important;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 500ms ease;
-    -moz-transition: -moz-transform 500ms ease;
-    -o-transition: -o-transform 500ms ease;
-    transition: transform 500ms ease;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-
-  .csstransforms3d.csstransitions.js-nav #inner-wrap {
-    -webkit-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -moz-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -ms-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    -o-transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-    transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
-  }
-
-  .csstransforms3d.csstransitions.js-ready #nav .block {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-    opacity: 0.7;
-    -webkit-transition: opacity 300ms 100ms, -webkit-transform 500ms ease;
-    -webkit-transition-delay: ease, 0s;
-    -moz-transition: opacity 300ms 100ms ease, -moz-transform 500ms ease;
-    -o-transition: opacity 300ms 100ms ease, -o-transform 500ms ease;
-    transition: opacity 300ms 100ms ease, transform 500ms ease;
-    -webkit-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -moz-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -ms-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -o-transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    transform: translate3d(70%, 0, 0) scale3d(0.9, 0.9, 0.9);
-    -webkit-transform-origin: 50% 0%;
-    -moz-transform-origin: 50% 0%;
-    -ms-transform-origin: 50% 0%;
-    -o-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-
-  .csstransforms3d.csstransitions.js-nav #nav .block {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-</style>
 </head>
 
 <body>
-
+<div class="container">
 
 <!-- Lets see what we can do to whip up this menu thing. -->
-<div class="row">
 
-	<div id="top" class="small-2 large-1 push-1 columns tbw_ddnav">
-		<ul id="" class="tbw_nav">
-			<li class="tbw_nav_page">ABOUT</li>
-			<!-- From the off-canvas demo --> 
-			<li class=""><a class="nav-btn" id="nav-open-btn" href="#nav">Book Navigation</a></li>
-			<!-- From foundation -->
-			<!-- <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li> -->
+
+<header id="header" class="row">
+	<div id="top" class="small-1 large-1 push-1 columns tbw_ddnav">
+		<ul id="" class="tbw_ddnav">
+			<li class="tbw_ddnav_page">ABOUT</li>
+  			  <a class="sidebar-button button menu-icon" id="sidebarButton" href="#sidebar"><span>Menu</span></a>
 				<ul class="inline-list">
 					<li class="facebook">F</li>
 					<li class="twitter">T</li>
 				</ul>
-			<li class="tbv_crab"><a href="<!-- @path hammer -->" alt="home">Home</a></li>
 		</ul>
+	<a class="tbw_ddnav_crab" href="<!-- @path hammer -->" alt="home">Home</a>
 	</div>
-	<!-- From the off-canvas demo --> 
-		<nav id="nav" role="navigation">
-	        <div class="block">
-	            <h2 class="block-title">Chapters</h2>
-	            <ul>
-	                <li class="is-active">
-	                    <a href="#">Chapter 1</a>
-	                </li><!--
-	             --><li>
-	                    <a href="#">Chapter 2</a>
-	                </li><!--
-	             --><li>
-	                    <a href="#">Chapter 3</a>
-	                </li><!--
-	             --><li>
-	                    <a href="#">Chapter 4</a>
-	                </li><!--
-	             --><li>
-	                    <a href="#">Chapter 5</a>
-	                </li>
-	            </ul>
-	            <a class="close-btn" id="nav-close-btn" href="#top">Return to Content</a>
-	        </div>
-	    </nav>
+</header>	
 
-	
-	<div class="small-9 columns panel"
-		<p>blah blah blah</p>
-	</div>
-</div>
+
+</div> <!-- close container -->
+
+
+
+<div class="container">
+
+<!--
+		<header id="header" class="row">
+		  <div class="eight columns phone-two">
+		    <nav id="menu" role="navigation" class="hide-for-small">
+    			<ul id="mainNav" class="nav-bar">
+    				<li><a href="">One</a></li>
+    				<li><a href="">Two</a></li>
+    				<li><a href="">Three</a></li>
+    				<li><a href="">Four</a></li>
+    			</ul>
+    		</nav>
+  			<p class="show-for-small">
+  			  <a class="sidebar-button button menu-icon" id="sidebarButton" href="#sidebar"><span>Menu</span></a>
+  			</p>
+		  </div>
+  		  <div class="four columns phone-two">
+		    <h1 id="site-title"><a href="http://zurb.com/playground/">ZURB</a></h1>
+		  </div>
+		</header>
+-->
+
+		<div class="row">
+  		<section role="main">
+  			<div class="row">
+  			  <div class="small-8 small-offset-2 large-offset-1 columns">
+  			    <h3>Off Canvas Nav Sidebar on Mobile</h3>
+      			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nulla eget nulla massa. Sed ultricies posuere tincidunt. Morbi dolor 
+est, aliquet quis egestas eu, consectetur nec neque. Etiam velit libero,
+ congue eu accumsan sit amet, eleifend et sem. Donec ac felis sed sapien
+ placerat venenatis. Fusce id tempus nunc. Vestibulum pellentesque 
+vulputate tempus. Suspendisse sed consequat lectus. Nulla bibendum 
+venenatis eros, elementum malesuada mi imperdiet eu. Fusce ornare 
+gravida nulla, sed scelerisque sem scelerisque at.</p>
+
+      			<p>Mauris consectetur elementum massa nec convallis. Integer 
+mauris purus, condimentum vitae mattis a, vehicula lacinia justo. 
+Pellentesque scelerisque orci at ligula cursus eu tempor elit euismod. 
+Donec eleifend, turpis in vulputate eleifend, orci lectus eleifend quam,
+ et ultrices mi nisi id nulla. Nullam est magna, varius nec consectetur 
+vel, pellentesque ac justo. Vivamus commodo pellentesque ante, sed 
+semper nulla congue non. Nunc nec augue sed nibh dapibus accumsan. 
+Nullam in mauris quis lacus ultricies convallis. Morbi semper suscipit 
+elit ut suscipit. Donec lobortis tellus lorem.</p>
+      		</div>
+<!--
+     		<div class="four columns">
+      		  <h4>Sidebar</h4>
+      		  <ul class="disc">
+      		    <li><a href="#">Link to a Category</a></li>
+      		    <li><a href="#">Link to a Category</a></li>
+      		    <li><a href="#">Link to a Category</a></li>
+      		    <li><a href="#">Link to a Category</a></li>
+      		    <li><a href="http://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past">Link to the Past</a></li>
+      		  </ul>
+      		</div>
+-->
+        </div>
+  		</section>
+
+
+  		<section id="sidebar" role="complementary">
+				<nav id="sideMenu" role="navigation">
+    			<ul id="sideMainNav" class="nav-bar hide-for-medium-up tbw_nav_sidebar">
+    				<li><a href="">One</a></li>
+    				<li><a href="">Two</a></li>
+    				<li><a href="">Three</a></li>
+    				<li><a href="">Four</a></li>
+    			</ul>
+    		</nav>
+  		</section>
+
+		</div>
+
+    <footer class="site-footer row" role="contentinfo">
+      <div class="twelve columns">
+        Created by ZURB for Foundation 3, based on code from Jason Weaver and Luke Wroblewski
+      </div>
+    </footer>
+  </div>
+
+
+
+
 
 <!-- @javascript assets/js/vendor/jquery -->
 <!-- @javascript foundation -->
-<!-- @javascript main.js -->
+<!-- @javascript offcanvas.js -->
+ <script>
+    $(document).foundation();
+ </script>
+
+
 
 </body>
 </html>
