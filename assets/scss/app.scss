@@ -18,7 +18,23 @@
 	color: red;
 }
 .white {
-	color: #fff;;
+	color: #fff;
+}
+.tbw_bold {
+	font-family: 'VeneerThree';
+	color: #fff;
+	text-transform: uppercase;
+}
+.tbw_serif {
+	font-family: 'great-primer', georgia, serif;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+}
+
+.tbw_italic {
+	font-family: 'great-primer',georgia, serif;
+	font-style: italic;
+	letter-spacing: .06em;
 }
 
 // Nav bar styles
