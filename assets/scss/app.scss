@@ -76,6 +76,13 @@ html,body {
 }	
 
 
+a#sidebarButton.tbw_menu_btn{
+	background: url('img/menuToggle.png') no-repeat; 
+	width: 42px; 
+	height: 33px; 
+}
+
+
 
 // Nav bar styles
 @import "includes/_nav.scss";

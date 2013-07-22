@@ -74,7 +74,8 @@
 	margin: 0 0;
 }
 
-.tbw_ddnav_page .active{
+.tbw_ddnav_page li.active{
+	display: inline;
 	font-size: 3em;
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
@@ -86,6 +87,10 @@
 	-ms-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+ul.tbw_ddnav_page li a{
+	display:none;
 }
 
 .tbw_ddnav_sidebar{
@@ -105,6 +110,8 @@ header#header {
 		
 	}
 }
+
+
 [data-magellan-expedition] {
 	background: none;
 }
