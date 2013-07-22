@@ -41,7 +41,7 @@ body.off-canvas { padding: 0; margin: 0; }
 
 .active-menu [role="navigation"]#topMenu { margin-top: 0 !important; }
 
-@media all and (min-width: 768px) { menu-button, .sidebar-button { display: none; }
+@media all and (min-width: 768px) { menu-button, .sidebar-button { display: inline-block; }
   [role="complementary"] { width: 20%; margin-left: 0; float: left; padding: 0 15px; }
   [role="main"] { width: 80%; padding: 0 15px; }
   .paneled [role="main"] { width: 100%; padding: 0; background: #f4f4f4; left: 0 !important; }
