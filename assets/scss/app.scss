@@ -6,7 +6,7 @@
 // @import 
 
 // then import foundation
-
+@import url('foundation.css');
 //Trying to make hw-parallax work
 
 html,body {
@@ -44,6 +44,38 @@ html,body {
 	font-style: italic;
 	letter-spacing: .06em;
 }
+
+.ir {
+	 border: 0; 
+	 font: 0/0 a; 
+	 text-shadow: none; 
+	 color: transparent;
+}
+
+.facebook a{
+	background: url('img/facebook.png') no-repeat;
+	width: 25px; 
+	height: 25px; 
+}
+
+.twitter a{
+	background: url('img/twitter.png')  no-repeat; 
+	width: 25px; 
+	height: 25px; 
+}
+
+.blogger a{
+	background: url('img/blogger.png') no-repeat; 
+	width: 25px; 
+	height: 25px; 
+}
+.tbw_crab a{
+	background: url('img/crab.png') no-repeat; 
+	width: 25px; 
+	height: 25px; 
+}	
+
+
 
 // Nav bar styles
 @import "includes/_nav.scss";
