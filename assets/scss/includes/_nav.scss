@@ -23,15 +23,26 @@
 	font-weight: normal;
 }
 
-.tbw_nav_social, .tbw_nav {
+.tbw_nav, .tbw_nav_social{
 	color: #fff;
 	list-style: none;
 }
 
+.tbw_nav_social li {
+	@extend inline-list;
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+
+.tbw_head hr { 
+	margin: .15em 0;
+	border-image: url('img/ropePattern.png') repeat-x top left;
+}
+
 .tbw_nav > li {	
-	margin: 0 .1em;
-	font-size: 1.3em;
-	letter-spacing: .2em;
+	margin: 0 5px;
+	font-size: 1.25em;
+	letter-spacing: .1em;
 }
 
 .tbw_logo { margin-top: -1.4em; }
@@ -48,7 +59,7 @@
 	  text-indent: 100%; 
 	  white-space: nowrap; 
 	  overflow: hidden;
-	  @media screen and (max-width: 870px) {
+	  @media screen and (max-width: 935px) {
 		  display:none;
 	  }
 }
@@ -60,7 +71,8 @@
 .tbw_nav_signup span {
 	color: red;
 }
-.tbw_nav_search {padding: 20px 0}
+
+input.tbw_nav_search {margin: 20px 0}
 
 // Styles for fixed left nav
 
@@ -74,13 +86,13 @@
 	margin: 0 0;
 }
 
-.tbw_ddnav_page li.active{
-	display: inline;
+.tbw_ddnav_pages li.active{
+	display: block;
 	font-size: 3em;
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
 	letter-spacing:.15em;
-	margin: 2em 0;
+	margin: 4em 0;
 	transform: (-90deg);
 	-webkit-transform: rotate(-90deg);
 	-moz-transform: rotate(-90deg);
@@ -89,7 +101,7 @@
 	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
-ul.tbw_ddnav_page li a{
+ul.tbw_ddnav_pages li{
 	display:none;
 }
 
@@ -110,7 +122,9 @@ header#header {
 		
 	}
 }
-
+.tbw_crabMenu{
+	position: absolute;
+}
 
 [data-magellan-expedition] {
 	background: none;

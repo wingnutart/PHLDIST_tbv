@@ -70,9 +70,11 @@ html,body {
 	height: 25px; 
 }
 .tbw_crab a{
-	background: url('img/crab.png') no-repeat; 
-	width: 25px; 
-	height: 25px; 
+	background: url('img/crab.png') no-repeat;
+	border-radius: 50%;
+	width: 50px; 
+	height: 50px;
+	display: block; 
 }	
 
 
