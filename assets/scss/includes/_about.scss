@@ -1,0 +1,50 @@
+// The about us page styles.
+
+#bg-about {
+	height:985px;
+}
+
+html.touch #bg-about {
+    background-image: url(img/about.png);
+    background-size: cover;
+}
+
+.tbw_about{
+	position: relative;
+	margin-top: 6em;
+	font-size: 1.1rem;
+	border-left: 8px solid #eee;
+	border-right: 8px solid #eee; 
+	box-shadow:
+		0 0 0 2px #000,
+		0 0 0 3px #999,
+		0 0 0 9px #eee,
+		0 0 0 10px #000;
+	@media screen and (max-width:768px){
+		font-size: 1rem;		
+	}
+}
+
+.tbw_star {
+ position: relative;
+ top: 25px;
+ left: -150px;
+ width: 300px; 
+ height: 300px; 
+ background: url(img/compassStar.png) no-repeat; 
+ text-indent: 100%; 
+ white-space: nowrap; 
+ overflow: hidden; 
+}
+
+.tbw_traditional {
+ position: relative;
+ top: 50px;
+ left: -120px;
+ width: 180px; 
+ height: 180px; 
+ background: url(img/seasoningLabel.png) no-repeat; 
+ text-indent: 100%; 
+ white-space: nowrap; 
+ overflow: hidden; 
+}

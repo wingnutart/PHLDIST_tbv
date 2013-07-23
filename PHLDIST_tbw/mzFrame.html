@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>                                                                  
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<script type="text/javascript" src="mzMini/mzLauncher.js"></script>
+	
+	<script type="text/javascript">
+		
+		(function(){
+			//Get a ref on the MotionComposer namespace
+			var mzName = "com_aquafadas_mz_v2";
+			var mz = window[mzName];
+			
+			var options = {
+				//Path to the publication folder, only set this if you are not using an iframe and put the animation in a different folder
+				publishPath: null ,
+				//Array containing "html5" and "flash", defines which version should take the priority over the other one when the choice is possible 
+				priorities:	["html5", "flash"] //["flash","html5"]
+			};
+			
+			//Create a launcher to start the animation 
+			var player = mz.loadAndStartAnim( "MC1374386590607460" , 1374440928116380 , options );
+			
+			
+			
+			
+		})();
+		
+	</script>
+	
+	
+	<style type="text/css">
+		/* For IE iframe transparency */
+		html, body {
+			background-color: transparent;
+		}
+		.me-plugin{
+			height:0px;
+		}
+	</style>
+</head>
+<body style=" margin:0px; padding:0px; width:100%; height:100%; position:absolute;">
+	<div id="MC1374386590607460">
+		<!-- Put alternate content here , it will only be displayed if neither flash nor the HTML5 players can be used. -->
+		
+	</div>	
+</body>
+</html>
