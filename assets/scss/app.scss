@@ -22,6 +22,9 @@ html,body {
   src: url('fonts/veneerlowresthree-webfont.eot?') format('eot'), url('fonts/veneerlowresthree-webfont.woff') format('woff'), url('fonts/veneerlowresthree-webfont.ttf') format('truetype');
 }
 
+$primary: red;
+$secondary: #fff; 
+
 .red {
 	color: red;
 }
