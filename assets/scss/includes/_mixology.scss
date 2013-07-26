@@ -11,8 +11,30 @@ html.touch #bg-mixology {
 	margin-top: 20px;
 }
 
+.tbw_overlay {
+	margin-top: -3em;
+	padding: 2px 5px 2px 17px;
+	background-color: black;
+}
 
+.tbw_overlay h5{
+	color: $primary;
+	margin-bottom: -0.3em;
+}
 
+.tbw_overlay a {
+	font-size: .8em;
+	letter-spacing: .2em;
+}
+
+li a.zoom-btn {
+  float: right;
+  clear: left;
+  bottom: 5px;
+  background: url(img/nav.png);
+  width: 40px;
+  height: 40px;
+}
 
 /* Titter and Flickr Sidebars
 ----------------------------------------------------------  */
