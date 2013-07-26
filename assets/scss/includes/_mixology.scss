@@ -11,7 +11,11 @@ html.touch #bg-mixology {
 	margin-top: 20px;
 }
 
-/* Social Sidebars */
+
+
+
+/* Titter and Flickr Sidebars
+----------------------------------------------------------  */
 
 .tbw_tweets, .tbw_flickr {
 	@extend .tbw_italic;
@@ -25,20 +29,37 @@ html.touch #bg-mixology {
 .tbw_tweets h2, .tbw_flickr h2{
 	@extend .tbw_bold;
 	padding-left: 40px;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: $secondary;
-	border-bottom: #fff dotted;
+	border-bottom: 2px #fff dotted;
+	padding-left: 40px;
+	padding-bottom: 10px;
+}
+
+.tbw_tweets h2 {
+	background-image: url('img/twitter.png');
+	background-repeat: no-repeat;
+	height: 40px;
+}
+
+.tbw_flickr h2 {
+	background-image: url('img/nav.png');
+	background-repeat: no-repeat;
+	height: 40px;
 }
 
 .tbw_tweets ul {
 	list-style: none;
-	padding-left: 20px;
+	margin-left: 10px;
 }
-.tbw_tweets li:last-child, .flickr_badge_image a:last-child {
-	border-bottom: #fff dotted;
+.tbw_tweets hr {
+	border: 1px #fff dotted;
+	color: none;
 }
 
-.tbw_tweets h4{
+.tbw_tweets h4 a{
+	color: $primary;
+	font-style: normal;
 }
 
 .tbw_tweets h4 a:after{
@@ -49,17 +70,10 @@ html.touch #bg-mixology {
 	height: 25px;
 }
 
-.tbw_flickr {
-	margin-top: 20px;
-}
-
 .tp_recent_tweets {
 	float: left;
 	clear: left;
 }
-
-/* Recent tweets
-----------------------------------------------------------  */
 
 .tp_recent_tweets  li {
 	background-image: url('img/twitter.png');
@@ -72,8 +86,12 @@ html.touch #bg-mixology {
 	line-height: 20px;
 }
 
-.tp_recent_tweets  li a {
-	font-weight: bold;	
+.wpb_flickr_widget p {
+	border-top: 2px #fff dotted;
+}
+
+.tp_recent_tweets li a {
+	font-weight: normal;	
 }
 
 .tp_recent_tweets .twitter_time {
@@ -105,16 +123,24 @@ html.touch #bg-mixology {
   max-width: 100%;
   max-height: 100%;
 }
+
 .wpb_flickr_widget p.flickr_stream_wrap {
+  color: $primary;
   clear: both;
   margin-bottom: 0;
   font-size: 80%;
 }
 
 .wpb_flickr_widget p.flickr_stream_wrap a {
-  background-image: url('img/flickr.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 25px;
-  display: inline-block;
+  @extend .tbw_bold;
+  font-size: 1.5em;
+  font-style: normal;
+  color: $primary;
+}
+
+.wpb_flickr_widget p.flickr_stream_wrap a:after {
+  background-image: url('img/nav.png');
+  background-repeat: none;
+  width: 25px;
+  height: 25px
 }
