@@ -1,3 +1,6 @@
+/* Thumbnails and Titles
+----------------------------------------------------------  */
+
 #bg-mixology {
 	height:985px;
 }
@@ -12,7 +15,6 @@ html.touch #bg-mixology {
 }
 
 .tbw_overlay {
-	margin-top: -3em;
 	padding: 2px 5px 2px 17px;
 	background-color: black;
 }
@@ -29,11 +31,12 @@ html.touch #bg-mixology {
 
 li a.zoom-btn {
   float: right;
-  clear: left;
-  bottom: 5px;
+/*   clear: left; */
+  margin-top: -40px;
   background: url(img/nav.png);
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
+  
 }
 
 /* Titter and Flickr Sidebars
