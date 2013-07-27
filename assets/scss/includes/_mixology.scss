@@ -15,25 +15,29 @@ html.touch #bg-mixology {
 }
 
 .tbw_overlay {
-	padding: 2px 5px 2px 17px;
-	background-color: black;
+	margin-top: -1px;
+    height: 4em;
+	padding: 2px 10px 1px 17px;
+	background-color: $drk_background;
 }
 
 .tbw_overlay h5{
+	font-weight: normal;
+	font-size: 1.2em;
 	color: $primary;
-	margin-bottom: -0.3em;
+	margin-bottom: -0.1em;
 }
 
-.tbw_overlay a {
-	font-size: .8em;
-	letter-spacing: .2em;
+.tbw_overlay p {
+	@extend .tbw_legible;
+	font-size: 1em;
 }
 
 li a.zoom-btn {
+  @extend .ir;
   float: right;
-/*   clear: left; */
-  margin-top: -40px;
-  background: url(img/nav.png);
+  margin-top: -55px;
+  background: url('img/plusicon.png');
   width: 25px;
   height: 25px;
   
@@ -42,33 +46,31 @@ li a.zoom-btn {
 /* Titter and Flickr Sidebars
 ----------------------------------------------------------  */
 
-.tbw_tweets, .tbw_flickr {
+.tbw_tweets {
 	@extend .tbw_italic;
 	font-size: .9em;
 	margin-top: 20px;
-	background-color: #000;
-	padding: 10px 10px;
+	background-color: $drk_background;
+	padding: 5px 5px;
 
 }
 
 .tbw_tweets h2, .tbw_flickr h2{
-	@extend .tbw_bold;
-	padding-left: 40px;
+	@extend .tbw_legible;
+	padding: 7px 0 0 50px;
 	font-size: 1.3em;
 	color: $secondary;
-	border-bottom: 2px #fff dotted;
-	padding-left: 40px;
-	padding-bottom: 10px;
+	border-bottom: 2px $secondary dotted;
 }
 
 .tbw_tweets h2 {
-	background-image: url('img/twitter.png');
+	background-image: url('img/redTwitter.png');
 	background-repeat: no-repeat;
 	height: 40px;
 }
 
 .tbw_flickr h2 {
-	background-image: url('img/nav.png');
+	background-image: url('img/flickr.png');
 	background-repeat: no-repeat;
 	height: 40px;
 }
@@ -78,7 +80,7 @@ li a.zoom-btn {
 	margin-left: 10px;
 }
 .tbw_tweets hr {
-	border: 1px #fff dotted;
+	border: 1px $secondary dotted;
 	color: none;
 }
 
@@ -89,7 +91,7 @@ li a.zoom-btn {
 
 .tbw_tweets h4 a:after{
 	content: " ";
-	background-image: url('img/nav.png') no-repeat;
+	background-image: url('img/redArrow.png') no-repeat;
 	display: inline-block;
 	width: 25px;
 	height: 25px;
@@ -101,7 +103,7 @@ li a.zoom-btn {
 }
 
 .tp_recent_tweets  li {
-	background-image: url('img/twitter.png');
+	background-image: url('img/quotes.png');
 	background-repeat: no-repeat;	
 	background-position: 0px 4px;
 	padding-left: 30px;
@@ -112,7 +114,7 @@ li a.zoom-btn {
 }
 
 .wpb_flickr_widget p {
-	border-top: 2px #fff dotted;
+	border-top: 2px $secondary dotted;
 }
 
 .tp_recent_tweets li a {
@@ -128,6 +130,11 @@ li a.zoom-btn {
 
 /* Flickr stream
 ---------------------------------------------------------- */
+.tbw_flickr {
+	@extend .tbw_tweets;
+/* 	margin-top: 0; */
+}
+
 .flickr_badge_image {
   margin: 0 10px 10px 0px;
   width: 50px;
@@ -157,7 +164,7 @@ li a.zoom-btn {
 }
 
 .wpb_flickr_widget p.flickr_stream_wrap a {
-  @extend .tbw_bold;
+  @extend .tbw_legible;
   font-size: 1.5em;
   font-style: normal;
   color: $primary;
