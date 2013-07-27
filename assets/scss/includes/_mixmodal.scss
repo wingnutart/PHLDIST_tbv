@@ -1,0 +1,37 @@
+/* Mixology pop-up modals */
+
+.reveal-modal {
+	background-color: none;
+    background-image: url('/img/parchment.jpg');
+    background-size: cover;
+    padding: 2em 2em;
+}
+
+.reveal-modal h2 {
+	@extend .tbw_bold;
+	color: $primary;	
+}
+
+.reveal-modal .lead  {
+	@extend .tbw_legible;
+	font-style: normal;	
+	font-size: 1.5em;
+}
+
+.reveal-modal h3 {
+	@extend .tbw_legible;
+}
+
+.reveal-modal p, .reveal-modal li {
+	@extend .tbw_italic;
+	font-size: 1em;	
+}
+
+.reveal-modal a{
+	color: $secondary;
+}
+
+.reveal-modal a.close-reveal-modal{
+	color: $primary;
+	font-size: 3em;
+}
