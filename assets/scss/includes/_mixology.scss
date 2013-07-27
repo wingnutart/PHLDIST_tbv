@@ -87,8 +87,9 @@ li a.zoom-btn {
 	font-style: normal;
 }
 
-.tbw_tweets p {
-	background-image: url('img/redArrow.png') no-repeat;
+.tbw_tweets span.arrow, .tbw_flickr span.arrow {
+	background-image: url('img/rightarrow.png');
+	background-repeat: no-repeat;
 }
 
 .tp_recent_tweets {
@@ -162,11 +163,6 @@ li a.zoom-btn {
   font-size: 1.5em;
   font-style: normal;
   color: $primary;
+  padding: 10px 10px;
 }
 
-.wpb_flickr_widget p.flickr_stream_wrap a:after {
-  background-image: url('img/rightarrow.png');
-  background-repeat: none;
-  width: 25px;
-  height: 25px
-}
