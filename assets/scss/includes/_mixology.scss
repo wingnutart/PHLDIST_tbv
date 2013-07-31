@@ -51,7 +51,7 @@ li a.zoom-btn {
 	font-size: .9em;
 	margin-top: 20px;
 	background-color: $drk_background;
-	padding: 5px 5px;
+	padding: 10px 10px;
 
 }
 
@@ -77,9 +77,11 @@ li a.zoom-btn {
 	list-style: none;
 	margin-left: 10px;
 }
-.tbw_tweets hr {
-	border: 1px $secondary dotted;
-	color: none;
+.tbw_bottom {
+	@extend .tbw_tweets;
+	border-top: 2px $secondary dotted;
+	color: #fff;
+	height: 3em;
 }
 
 .tbw_tweets p a{
@@ -87,9 +89,18 @@ li a.zoom-btn {
 	font-style: normal;
 }
 
-.tbw_tweets span.arrow, .tbw_flickr span.arrow {
+.tbw_bottom {
+clear: both;
+padding-top: .5em;
+font-size: 1.25em;
+}
+
+.tbw_bottom span.arrow, .tbw_flickr span.arrow {
 	background-image: url('img/rightarrow.png');
 	background-repeat: no-repeat;
+	display: inline-block;
+	padding-left: 45px;
+	color: #000;
 }
 
 .tp_recent_tweets {
