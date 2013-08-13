@@ -27,8 +27,9 @@
 	height: 25px; 
 }
 
+// Index page horizontal navigation
+
 .tbw_head {
-/* 	height: 200px; */
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
 	background-color: #000;
@@ -98,7 +99,7 @@
 
 input.tbw_nav_search {margin: 20px 0}
 
-// Styles for fixed left nav
+// Styles for crabmenu, the fixed left nav
 
 .tbw_crabMenu{
 }
@@ -151,7 +152,7 @@ ul.tbw_ddnav_pages li{
 	background-color: none;
 }
 
-// the links
+// the crabMenu links
 
 .tbw_crab a{
 	background: url('img/crab.png') no-repeat;
@@ -166,7 +167,8 @@ a#sidebarButton.tbw_menu_btn{
 	position: relative;
 	background: url('img/menuToggle.png') no-repeat; 
 	width: 42px; 
-	height: 33px; 
+	height: 33px;
+	display: block; 
 }
 
 
@@ -186,4 +188,30 @@ header#header {
 	padding: 0 0;
 	width: 3.5em;
 	min-width: 30px;
+}
+
+// Styling the sidenav
+
+.active [role="complementary"]{
+}
+
+[role="complementary"]{
+	position: fixed;
+}
+
+.tbw_nav_sidebar {
+	padding-left: 100px;
+}
+
+.tbw_nav_sidebar li{
+	background-color: #666;
+	text-align: center;
+	line-height: 2em;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+.tbw_nav_sidebar li a{
+	width:100%;
 }

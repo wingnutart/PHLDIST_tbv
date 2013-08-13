@@ -7,7 +7,14 @@
 
 // then import foundation
 @import url('foundation.css');
-//Trying to make hw-parallax work
+
+// Off canvas feature
+@import url('../css/offcanvas.css');
+
+// hw-parallax work
+@import url('../css/hw-parallax.css');
+
+
 
 html,body {
     height: 100%;
@@ -74,7 +81,7 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 // Footer Styles
 .tbw_footer {
 	color: #fff;
-	background-color: #000;
+/* 	background-color: #000; */
 }
 
 .tbw_footer h3 {
