@@ -14,6 +14,16 @@
 // hw-parallax work
 @import url('../css/hw-parallax.css');
 
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base: 16px !default;
+
+// Working in ems is annoying. Think in pixels by using this handy function, emCalc(#px)
+@function emCalc($pxWidth) {
+  @return $pxWidth / $em-base * 1em;
+}
+
 
 
 html,body {
@@ -29,6 +39,7 @@ html,body {
 
 $primary: red;
 $secondary: #fff;
+$black: #000;
 $drk_background: rgba(0,0,0,.8);
 
 $fs_primary: 'VeneerThree', 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-serif;
@@ -79,7 +90,11 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 // Footer Styles
 .tbw_footer {
 	color: #fff;
-/* 	background-color: #000; */
+	background-color: #000;
+}
+
+.tbw_footer a {
+	color: #fff;
 }
 
 .tbw_footer h3 {
