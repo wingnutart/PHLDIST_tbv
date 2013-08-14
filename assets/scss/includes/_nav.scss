@@ -2,11 +2,6 @@
 // Styles for Nav tbw_nav and Drop Down Nav (tbw_ddnav)
 //
 
-.logo{
-	@media screen and (min-width 768){
-			}
-}
-
 // The socials
 
 .facebook a{
@@ -60,6 +55,11 @@
 	margin-bottom: 4px;
 }
 
+.tbw_crabLower .tbw_nav_social li {
+	@extend inline-list;
+	margin: 5px 0;
+}
+
 .tbw_head hr { 
 	margin: .15em 0;
 	border-image: url('img/ropePattern.png') repeat-x top left;
@@ -103,6 +103,31 @@
 }
 
 input.tbw_nav_search {margin: 45px 0}
+@media all and (min-width: 850px) {
+	.tbw_ddnav_pages li.active {font-size: 2em;}
+	header#header { left:15%; }
+}
+@media all and (min-width: 768px) {
+	.tbw_ddnav_pages li.active {font-size: 2em;}
+	header#header { left:6%; }
+}
+@media all and (max-width: 767px) {
+	.logo {margin-left: 20%;}
+	.tbw_ddnav_pages li.active {font-size: 1.8em;}
+	header#header { left:10%; }
+}
+@media all and (max-width: 480px) {
+	.logo {margin-left: 12%;}
+	.tbw_ddnav_pages li.active {font-size: 1.5em;}
+	header#header { left:8%; }
+}
+@media all and (max-width: 320px) {
+	.logo {margin-left: 1%;}
+	.tbw_ddnav_pages li.active {font-size: 1.2em;}
+	header#header { left:1em; }
+}
+
+
 
 // Styles for crabmenu, the fixed left nav
 
@@ -177,13 +202,7 @@ a#sidebarButton.tbw_menu_btn{
 }
 
 
-header#header {
-	left:1em;
-	@media screen and (min-width:768px){
-		left:3em;
-		
-	}
-}
+
 .tbw_crabMenu{
 	position: absolute;
 }
