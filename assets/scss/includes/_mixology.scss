@@ -18,7 +18,7 @@ html.touch #bg-mixology {
 	margin-top: -1px;
     height: 4em;
 	padding: 2px 10px 1px 17px;
-	background-color: $drk_background;
+	background-color: $drk_bkgd;
 }
 
 .tbw_overlay h5{
@@ -50,7 +50,7 @@ li a.zoom-btn {
 	@extend .tbw_italic;
 	font-size: .9em;
 	margin-top: 20px;
-	background-color: $drk_background;
+	background-color: $drk_bkgd;
 	padding: 10px 10px;
 
 }

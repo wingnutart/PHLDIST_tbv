@@ -37,10 +37,10 @@ html,body {
   src: url('fonts/veneerlowresthree-webfont.eot?') format('eot'), url('fonts/veneerlowresthree-webfont.woff') format('woff'), url('fonts/veneerlowresthree-webfont.ttf') format('truetype');
 }
 
-$primary: red;
+$primary: #b12921;
 $secondary: #fff;
 $black: #000;
-$drk_background: rgba(0,0,0,.8);
+$drk_bkgd: rgba(0,0,0,.8);
 
 $fs_primary: 'VeneerThree', 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-serif;
 $fs_secondary:'great-primer', georgia, 'Droid Serif', serif;
@@ -84,17 +84,96 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 	 color: transparent;
 }
 
+// The socials
+
+.facebook a{
+	background: url('img/facebook.png') no-repeat;
+	width: 25px; 
+	height: 25px; 
+}
+
+.twitter a{
+	background: url('img/twitter.png')  no-repeat; 
+	width: 25px; 
+	height: 25px; 
+}
+
+.blogger a{
+	background: url('img/blogger.png') no-repeat; 
+	width: 25px; 
+	height: 25px; 
+}
+
+// full logo socials in Contact.html
+
+.fb_logo a{
+	background: url('img/socials/facebook_logo.png') no-repeat;
+	width: 125px; 
+	height: 30px; 
+}
+
+.tw_logo a{
+	background: url('img/socials/twitter_logo.png')  no-repeat; 
+	width: 125px; 
+	height: 30px; 
+}
+
+.fk_logo a{
+	background: url('img/socials/flickr_logo.png') no-repeat; 
+	width: 125px; 
+	height: 30px; 
+}
+
+.tr_logo a{
+	background: url('img/socials/tumblr_logo.png') no-repeat;
+	width: 125px; 
+	height: 30px; 
+}
+
+.vo_logo a{
+	background: url('img/socials/vimeo_logo.png')  no-repeat; 
+	width: 125px; 
+	height: 30px; 
+}
+
+.pt_logo a{
+	background: url('img/socials/pinterest_logo.png') no-repeat; 
+	width: 125px; 
+	height: 30px; 
+}
+
 // Nav bar styles
 @import "includes/_nav.scss";
 
 // Footer Styles
 .tbw_footer {
-	color: #fff;
-	background-color: #000;
+	color: $secondary;
+//	background-color: $drk_bkgd;
 }
 
-.tbw_footer a {
-	color: #fff;
+.tbw_footer .side-nav{
+	padding: 0 0;
+}
+
+.tbw_border {
+	margin: emCalc(13px) 0;
+	border-left: $secondary 2px dotted;
+}
+
+.tbw_btmlinks a,.tbw_footer a:visited{
+	color: $secondary;
+}
+
+.tbw_btmlinks a:hover{
+	color: $primary;
+}
+
+.tbw_btmlinks a{
+	font-weight: normal;
+}
+
+.tbw_btmlinks li a:after{
+	content: "\0000a0\0000a0\003e";
 }
 
 .tbw_footer h3 {
@@ -106,13 +185,26 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 	list-style: none;
 }
 
+.tbw_footer .tbw_legible {
+	font-size: emCalc(18px);
+}
+
+.tbw_address{
+	margin-top: 10px;
+}
+
+.tbw_gap {
+	margin-top: 20px;
+}
+
 .tbw_siteinfo {
-	color: red;
+	color: $primary;
 	font-family: "alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
 	font-size: 1em;
 	margin-top: 10px;
-	background-color: #000;
+//	background-color: $drk_bkgd;
+	text-align: center;
 }
 
 // Background issues

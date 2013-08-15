@@ -2,25 +2,6 @@
 // Styles for Nav tbw_nav and Drop Down Nav (tbw_ddnav)
 //
 
-// The socials
-
-.facebook a{
-	background: url('img/facebook.png') no-repeat;
-	width: 25px; 
-	height: 25px; 
-}
-
-.twitter a{
-	background: url('img/twitter.png')  no-repeat; 
-	width: 25px; 
-	height: 25px; 
-}
-
-.blogger a{
-	background: url('img/blogger.png') no-repeat; 
-	width: 25px; 
-	height: 25px; 
-}
 
 // Index page horizontal navigation
 
@@ -28,10 +9,13 @@
 	margin: 1.8em;
 }
 
+.tbw_bar {
+	background-color: $drk_bkgd;
+}
+
 .tbw_head {
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
-	background-color: #000;
 	height: 6.2em;
 }
 
