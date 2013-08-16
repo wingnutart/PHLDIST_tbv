@@ -216,15 +216,15 @@ a#sidebarButton.tbw_menu_btn{
 }
 
 .tbw_nav_sidebar li{
-	background-color: #666;
+    font-size: emCalc(24px);
+	background-color: $drk_bkgd;
 	text-align: center;
 	line-height: 2em;
-	border-style: solid;
-	border-width: 2px;
-	border-color: #333;
+	border-bottom: $black 3px solid;
 }
 
 .tbw_nav_sidebar li a{
 	width:100%;
+	color: $secondary;
 }
 
