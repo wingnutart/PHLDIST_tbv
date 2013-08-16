@@ -37,10 +37,10 @@ html,body {
   src: url('fonts/veneerlowresthree-webfont.eot?') format('eot'), url('fonts/veneerlowresthree-webfont.woff') format('woff'), url('fonts/veneerlowresthree-webfont.ttf') format('truetype');
 }
 
-$primary: #b12921;
-$secondary: #fff;
-$black: #000;
-$drk_bkgd: rgba(0,0,0,.8);
+$primary: #b12921; // red
+$secondary: #fff; // white
+$black: #000; // black
+$drk_bkgd: rgba(0,0,0,.8); // transparent-black
 
 $fs_primary: 'VeneerThree', 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-serif;
 $fs_secondary:'great-primer', georgia, 'Droid Serif', serif;
@@ -148,7 +148,7 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 // Footer Styles
 .tbw_footer {
 	color: $secondary;
-//	background-color: $drk_bkgd;
+	background-color: $drk_bkgd;
 }
 
 .tbw_footer .side-nav{
@@ -192,18 +192,16 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 .tbw_address{
 	margin-top: 10px;
 }
-
-.tbw_gap {
-	margin-top: 20px;
+.tbw_siteinfobar {
+	margin-top: 1em;
 }
-
 .tbw_siteinfo {
 	color: $primary;
 	font-family: "alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
 	font-size: 1em;
 	margin-top: 10px;
-//	background-color: $drk_bkgd;
+	/*background-color: $drk_bkgd;*/
 	text-align: center;
 }
 
@@ -214,7 +212,9 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 	padding: .5em;
 }
 
-
+.tbw_gap {
+	margin-top: emCalc(100px);
+}
 
 // individual pages
 // index page
