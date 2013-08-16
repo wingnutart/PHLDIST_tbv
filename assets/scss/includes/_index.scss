@@ -18,13 +18,15 @@ html.touch #bg-home {
 	text-align: center;
 /* 	color: #fff; */
 	z-index: 2;
+	padding-top: emCalc(50px);
+
+	
 	@media screen and (min-width:768px) {
-		top: 11em;
-		height: 9em;
+				//height: 9em;
 	}
 	@media screen and (max-width:767px) {
-		top: 22em;	
-		height: 9em;
+		top: emCalc(200px);	
+		//height: 9em;
 	}
 }
 
@@ -46,7 +48,6 @@ html.touch #bg-home {
 		font-size: 1.7em;		
 	}
 */
-
 }
 
 .tbw_index  h2 span {
@@ -63,22 +64,4 @@ html.touch #bg-home {
 		font-size: .9em;		
 	}
 */
-}
-
-.tbw_index  {
-	//background-image: url("img/logo.png") no-repeat;
-}
-
-.tbw_hero {
-	margin-top: -16em;
-}
-
-.banner {
-	position: relative;
-	@media screen and (min-width:768px) {
-		top: -200px;
-	}
-	@media screen and (max-width:767px){
-		top:-170px;		
-	}
 }

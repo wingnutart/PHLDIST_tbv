@@ -5,23 +5,24 @@
 
 // Index page horizontal navigation
 
-.tbw_spacer {
-	margin: 1.8em;
+hr.tbw_bar {
+  border-top: $black 76px solid;
+  z-index: 5;
 }
 
-.tbw_bar {
-	background-color: $black;
+.tbw_spacer {
+	margin: 1.8em;
 }
 
 .tbw_head {
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
-	height: 6.2em;
+	margin-top:-122px;
 }
 
 
 .tbw_head a, .tbw_head a:visited{ color:#fff;}
-.tbw_head a:hover { color:red;}
+.tbw_head a:hover { color: $primary; }
 
 .tbw_head a {
 	margin: 0 0;
@@ -55,7 +56,9 @@
 	letter-spacing: .1em;
 }
 
-.tbw_logo {/* margin-top: -1.4em; */}
+.logo {
+    //height: emCalc(140px);	
+}
 
 .tbw_nav, .tba_nav .divider{
 	padding: 3em 0;
@@ -65,7 +68,7 @@
 	  margin-top: 9px;
 	  width: 14px; 
 	  height: 15px; 
-	  background: url(bullet.png);
+	  background: url(bullet.png) no-repeat;
 	  text-indent: 100%; 
 	  white-space: nowrap; 
 	  overflow: hidden;
@@ -81,9 +84,10 @@
 	color: #fff;
 	text-align: center;
 }
+
 .tbw_nav_signup span {
 	color: $primary;
-	letter-spacing: .2em;
+	letter-spacing: emCalc(4px);
 }
 
 input.tbw_nav_search {margin: 45px 0}
