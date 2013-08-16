@@ -7,7 +7,8 @@
 
 hr.tbw_bar {
   border-top: $black 76px solid;
-  z-index: 5;
+  z-index: 20;
+  position: relative;
 }
 
 .tbw_spacer {
@@ -18,6 +19,9 @@ hr.tbw_bar {
 	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
 	text-transform: uppercase;
 	margin-top:-122px;
+	z-index: 30;
+    position: relative;
+
 }
 
 
@@ -209,6 +213,10 @@ a#sidebarButton.tbw_menu_btn{
 
 [role="complementary"]{
 	position: fixed;
+}
+
+.active [role="complementary"]{
+	z-index: 9999;
 }
 
 .tbw_nav_sidebar {
