@@ -1,7 +1,7 @@
 // The bay vodka website index page
 
 #bg-home {
-	height:985px; // <!-- @todo this changes the height of the desktop background images -->
+	height:784px; // <!-- @todo this changes the height of the desktop background images -->
 }
 
 html.touch #bg-home {
@@ -30,12 +30,12 @@ html.touch #bg-home {
 }
 
 @media all and (min-width:768px){
-    #bg-home {height:985px;}
+    #bg-home {height:784px;}
     .tbw_index {padding-top: emCalc(50px);}
-    .tbw_index h2{font-size: emCalc(52px);}
+    .tbw_index h2{font-size: emCalc(48px);}
 }
 @media all and (max-width:767px){
     #bg-home {height:520px;}
     .tbw_index {padding-top: emCalc(35px);}
-    .tbw_index h2{font-size: emCalc(30px);}
+    .tbw_index h2{font-size: emCalc(24px);}
 }
