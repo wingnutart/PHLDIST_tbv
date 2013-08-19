@@ -50,6 +50,6 @@ body.off-canvas { padding: 0; margin: 0; }
   .hide-extras [role="complementary"] { display: none; }
   [role="navigation"]#topMenu { display: none; } }
 
-@media all {
+@media all { menu-button, .sidebar-button { display: inline-block; }
 	.active [role="complementary"] { display: block; width: 80%; float: left; z-index: 2; -webkit-transition: 0.15s all ease-in; -moz-transition: 0.15s all ease-in; -o-transition: 0.15s all ease-in; transition: 0.15s all ease-in;}
 }

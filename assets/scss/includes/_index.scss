@@ -11,7 +11,8 @@ html.touch #bg-home {
 
 .tbw_index {
 	text-align: center;
-	z-index: 2;
+	position: relative;
+	z-index: 40;
 }
 
 
@@ -19,23 +20,28 @@ html.touch #bg-home {
 	text-transform: uppercase;
 	letter-spacing: .02em;
 	color: $black;
-	font-weight: bold;
+	font-weight: normal;
+	line-height: .9em;
+	min-height: 95px;
 }
 
 .tbw_index  h2 span {
 	font-weight: normal;
-	letter-spacing: 0;
-	font-size: .8em;
-	line-height: 1.1em;
+	letter-spacing: -.03em;
+	font-size: .7em;
 }
 
 @media all and (min-width:768px){
     #bg-home {height:784px;}
-    .tbw_index {padding-top: emCalc(50px);}
-    .tbw_index h2{font-size: emCalc(48px);}
+    .tbw_index {padding-top: emCalc(120px);}
+    .tbw_index h2{font-size: emCalc(38px);}
 }
 @media all and (max-width:767px){
     #bg-home {height:520px;}
     .tbw_index {padding-top: emCalc(35px);}
-    .tbw_index h2{font-size: emCalc(24px);}
+    .tbw_index h2{font-size: emCalc(24px);
+                      color: $secondary;
+           background-color: $drk_bkgd;
+                    padding: 10px;
+    }
 }

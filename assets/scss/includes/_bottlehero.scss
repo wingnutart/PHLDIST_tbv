@@ -4,8 +4,10 @@
     overflow: visible;
     z-index: 10;
     position: relative;
-
 }
-@media all and (min-width:768px){
-    
+@media all and (max-width:768px){
+    .tbw_hero_btl {width: 233px;}    
+}
+@media all and (max-width:400px){
+    .tbw_hero_btl {min-width: 220px;}    
 }

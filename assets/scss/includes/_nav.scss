@@ -57,7 +57,7 @@ hr.tbw_bar {
 .tbw_nav > li {	
 	margin: 0 5px;
 	font-size: 1.25em;
-	letter-spacing: .1em;
+	letter-spacing: .01em;
 }
 
 .tbw_nav, .tba_nav .divider{
@@ -92,6 +92,8 @@ hr.tbw_bar {
 	letter-spacing: emCalc(4px);
 }
 
+header#header {z-index: 10000;}
+
 input.tbw_nav_search {margin: 45px 0}
 @media all and (min-width: 850px) {
 	.tbw_ddnav_pages li.active {font-size: 2em;}
@@ -102,17 +104,15 @@ input.tbw_nav_search {margin: 45px 0}
 	header#header { left:6%; }
 }
 @media all and (max-width: 767px) {
-    //.tbw_logo { margin-top: 140px;}
 	.tbw_ddnav_pages li.active {font-size: 1.8em;}
 	header#header { left:10%; }
+	.tbw_head {margin-top: 0;}
 }
 @media all and (max-width: 480px) {
-	.logo {margin-left: 12%;}
 	.tbw_ddnav_pages li.active {font-size: 1.5em;}
 	header#header { left:8%; }
 }
 @media all and (max-width: 320px) {
-	.logo {margin-left: 1%;}
 	.tbw_ddnav_pages li.active {font-size: 1.2em;}
 	header#header { left:1em; }
 }
@@ -183,7 +183,7 @@ ul.tbw_ddnav_pages li{
 }	
 
 
-a#sidebarButton.tbw_menu_btn{
+a.sidebarButton.tbw_menu_btn{
 	position: relative;
 	background: url('img/menuToggle.png') no-repeat; 
 	width: 42px; 

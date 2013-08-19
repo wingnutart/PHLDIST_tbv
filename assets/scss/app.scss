@@ -3,10 +3,10 @@
 
 // first import your own settings
 
-@import url('foundation/_settings.css');
+@import "foundation/_settings.css";
 
 // then import foundation
-@import url('foundation.css');
+@import "foundation.css";
 
 // Off canvas feature
 @import url('../css/offcanvas.css');
