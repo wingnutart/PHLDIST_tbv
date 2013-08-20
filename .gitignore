@@ -20,6 +20,7 @@
 *.tar
 *.zip
 
+
 # Logs and databases #
 ######################
 *.log
@@ -40,3 +41,5 @@ Thumbs.db
 Build/
 TheBayVodka_WEB_V1.jpg
 phpsqlsearch_dbinfo.php
+*.pxm
+*.txt

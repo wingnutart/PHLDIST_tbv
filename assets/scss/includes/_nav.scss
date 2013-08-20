@@ -61,11 +61,11 @@ hr.tbw_bar {
 }
 
 .tbw_nav, .tba_nav .divider{
-	padding: 3em 0;
+	padding: emCalc(48px) 0;
 }
 
 .tbw_nav .divider{
-	  margin-top: 9px;
+	  margin: 9px 1.5px;
 	  width: 14px; 
 	  height: 15px; 
 	  background: url(bullet.png) no-repeat;
@@ -94,7 +94,7 @@ hr.tbw_bar {
 
 header#header {z-index: 10000;}
 
-input.tbw_nav_search {margin: 45px 0}
+.tbw_nav_search {margin: 45px 0}
 @media all and (min-width: 850px) {
 	.tbw_ddnav_pages li.active {font-size: 2em;}
 	header#header { left:15%; }
