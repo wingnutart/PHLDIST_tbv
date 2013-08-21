@@ -1,8 +1,5 @@
 // The about us page styles.
 
-#bg-about {
-	height:985px;
-}
 
 html.touch #bg-about {
     background-image: url(img/about.png);
@@ -11,8 +8,6 @@ html.touch #bg-about {
 
 .tbw_about{
 	position: relative;
-	margin-top: 6em;
-	font-size: 1.1rem;
 	border-left: 8px solid #eee;
 	border-right: 8px solid #eee; 
 	box-shadow:
@@ -25,21 +20,25 @@ html.touch #bg-about {
 	}
 }
 
+.tbw_about p {
+   	z-index: 60;
+}
+
 .tbw_star {
  position: relative;
  top: 25px;
- left: -120px;
  width: 300px; 
  height: 300px; 
  background: url(img/compassStar.png) no-repeat; 
  text-indent: 100%; 
  white-space: nowrap; 
- overflow: hidden; 
+ overflow: hidden;
+ z-index: 50; 
 }
 
 .tbw_traditional {
  position: relative;
- top: 50px;
+ top: 4.5em;
  left: -120px;
  width: 180px; 
  height: 180px; 
@@ -49,6 +48,26 @@ html.touch #bg-about {
  overflow: hidden; 
 }
 
-.btw_about_btn {
-    background-color: $secondary;
+.tbw_about_btn {
+    background-color: $primary;
 }
+
+.tbw_about_btn a{
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: emCalc(1px);
+}
+
+
+ @media screen and (min-width:769px){
+      #bg-about { 	margin-top: 6em; height: 784px;}
+      .tbw_about {	font-size: 1.1rem;}
+      .tbw_traditional {left: -100px;}
+      .tbw_star {left: -100px;}
+ }
+ @media screen and (max-width:768px){
+       #bg-about {	margin-top: 2em; height: 580px;}
+      .tbw_about {	font-size: .8rem;}
+      .tbw_traditional {left: -80px;}
+      .tbw_star {left: -80px;}      
+ }

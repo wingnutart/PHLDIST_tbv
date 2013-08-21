@@ -21,20 +21,25 @@ html.touch #bg-home {
 	letter-spacing: .02em;
 	color: $black;
 	font-weight: normal;
-	line-height: .9em;
+	line-height: 1.2em;
 	min-height: 95px;
 }
 
 .tbw_index  h2 span {
 	font-weight: normal;
 	letter-spacing: -.03em;
-	font-size: .7em;
+	font-size: .9em;
 }
 
-@media all and (min-width:768px){
+@media all and (min-width:824px){
     #bg-home {height:784px;}
     .tbw_index {padding-top: emCalc(120px);}
     .tbw_index h2{font-size: emCalc(38px);}
+}
+@media all and (min-width:768px){
+    #bg-home {height:784px;}
+    .tbw_index {padding-top: emCalc(80px);}
+    .tbw_index h2{font-size: emCalc(30px);}
 }
 @media all and (max-width:767px){
     #bg-home {height:520px;}
