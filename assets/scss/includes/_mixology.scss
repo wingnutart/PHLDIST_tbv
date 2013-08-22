@@ -1,10 +1,6 @@
 /* Thumbnails and Titles
 ----------------------------------------------------------  */
 
-#bg-mixology {
-	height:985px; //<!-- @todo fix the background here -->
-}
-
 html.touch #bg-mixology {
     background-image: url('img/mixology.png');
     background-size: cover;
@@ -41,6 +37,15 @@ li a.zoom-btn {
   width: 25px;
   height: 25px;
   
+}
+
+@media all and (min-width:768){
+    #bg-mixology { height:985px; }
+}
+
+@media all and (max-width:767px){
+    #bg-mixology { height:1400px; }
+    .tbw_mix li {width: 100%;}
 }
 
 /* Titter and Flickr Sidebars

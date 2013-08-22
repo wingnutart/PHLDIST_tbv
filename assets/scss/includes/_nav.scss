@@ -103,6 +103,10 @@ header#header {z-index: 10000;}
 	.tbw_ddnav_pages li.active {font-size: 2em;}
 	header#header { left:6%; }
 }
+@media all and (width:768px){
+   	.tbw_nav > li {	margin-top:-15px; line-height: 2em; }
+	.tbw_logo { margin-top: 10px; }
+}
 @media all and (max-width: 767px) {
 	.tbw_ddnav_pages li.active {font-size: 1.8em;}
 	header#header { left:10%; }

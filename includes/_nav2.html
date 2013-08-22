@@ -2,7 +2,7 @@
 <div class="tbw_head">
 	<div class="row ">
 
-			<div class="large-4 hide-for-small columns">
+			<div class="large-4 medium-3 hide-for-small columns">
 				<div class="row">
 					<div class="large-4 hide-for-medium columns">
 						<ul class="inline-list tbw_nav_social ir">
@@ -19,7 +19,7 @@
 						<hr />
 						<a href="http://bayvodka.com/contact.html" target="_blank" class="tbw_nav_signup"> Sign up for our <span>newsletter</span></a>
 					</div>
-					<div class="large-8 medium-4 columns">
+					<div class="large-8 columns">
 						<ul class="inline-list tbw_nav">
 							<li class="divider"></li>
 							<li><a class="anchorLink" href="#bg-about">About</a></li>
@@ -29,12 +29,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="small-12 medium-4 large-4 columns logo">
+			<div class="small-12 medium-6 large-4 columns logo">
 				<a class="sidebarButton"  href="#sidebar" ><img class="tbw_logo"src="<!-- @path thebay_logo.png -->" Alt="The Bay Vodka" /></a>  <!-- @todo when you get the sidebar to disappear add id="sidebarButton" href="#sidebar"  -->
 			</div>
-			<div class="large-4 columns hide-for-small">
+			<div class="large-4 medium-3 columns hide-for-small">
 				<div class="row">
-					<div class="large-8 medium-4 columns">
+					<div class="large-8 columns">
 						<ul class="inline-list tbw_nav">
 								<li><a class="anchorLink" href="#bg-media">Find The Bay</a></li>								
 								<li class="divider"></li>
@@ -45,8 +45,10 @@
 					</div>
 					<div class="large-4 hide-for-medium columns tbw_nav_search">
     					<div class="row collapse">
-    						<div class="small-9 columns"><input type="text" class="" placeholder="Search"></div>
-    						<div class="small-3 columns"><a href="#" class="button prefix">Go!</a></div>
+        					<form>
+        						<div class="small-9 columns"><input type="text" id="addressInput" class="" placeholder="Search"></div>
+        						<div class="small-3 columns"><a href="#bg-media"><input type="submit" onclick="searchLocations()" value="Go!" class="button prefix"></input></a></div>
+    						</form>
     					</div>
 					</div>
 				</div>

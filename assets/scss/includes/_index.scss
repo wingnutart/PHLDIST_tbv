@@ -31,15 +31,15 @@ html.touch #bg-home {
 	font-size: .9em;
 }
 
+@media all and (min-width:768px){
+    #bg-home {height:784px;}
+    .tbw_index {padding-top: emCalc(100px);}
+    .tbw_index h2{font-size: emCalc(30px);}
+}
 @media all and (min-width:824px){
     #bg-home {height:784px;}
     .tbw_index {padding-top: emCalc(120px);}
     .tbw_index h2{font-size: emCalc(38px);}
-}
-@media all and (min-width:768px){
-    #bg-home {height:784px;}
-    .tbw_index {padding-top: emCalc(80px);}
-    .tbw_index h2{font-size: emCalc(30px);}
 }
 @media all and (max-width:767px){
     #bg-home {height:520px;}

@@ -28,6 +28,7 @@ $em-base: 16px !default;
 
 html,body {
     height: 100%;
+//    background-color: rgba(0,0,0,.8);
 }
 
 //  
@@ -91,6 +92,25 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 	 text-shadow: none; 
 	 color: transparent;
 }
+
+.tbw_nav_search .button, .tbw_about_btn, .tbw_search_btn, .tbw_radius_btn {
+    background-color: $primary;
+}
+
+.tbw_nav_search .button a, .tbw_about_btn a, .tbw_search_btn a, .tbw_radius_btn a{
+    font-size: 1.4em;
+    font-weight: normal;
+    letter-spacing: emCalc(1px);
+}
+
+.tbw_nav_search .button a:hover, .tbw_about_btn a:hover, .tbw_search_btn a:hover, .tbw_radius_btn a:hover {
+    color: $secondary;
+}
+
+.tbw_nav_search .button:hover,.tbw_about_btn:hover, .tbw_search_btn:hover, .tbw_radius_btn:hover {
+    background-color: $black;
+}
+
 
 // The socials
 
@@ -166,6 +186,7 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 .tbw_border {
     margin: 10px 0;
 	border-left: $secondary 2px dotted;
+	padding-left: 10px;
 }
 
 @media all and (min-width:768px) {

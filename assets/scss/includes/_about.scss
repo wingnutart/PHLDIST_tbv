@@ -48,26 +48,16 @@ html.touch #bg-about {
  overflow: hidden; 
 }
 
-.tbw_about_btn {
-    background-color: $primary;
-}
-
-.tbw_about_btn a{
-    font-size: 1.4em;
-    font-weight: normal;
-    letter-spacing: emCalc(1px);
-}
-
 
  @media screen and (min-width:769px){
-      #bg-about { 	margin-top: 6em; height: 784px;}
-      .tbw_about {	font-size: 1.1rem;}
+      #bg-about { 	 height: 784px;}
+      .tbw_about {	margin-top: 6em; font-size: 1.1rem;}
       .tbw_traditional {left: -100px;}
       .tbw_star {left: -100px;}
  }
  @media screen and (max-width:768px){
-       #bg-about {	margin-top: 2em; height: 580px;}
-      .tbw_about {	font-size: .8rem;}
+       #bg-about {	height: 600px;}
+      .tbw_about {	margin-top: 2em; font-size: .8rem;}
       .tbw_traditional {left: -80px;}
       .tbw_star {left: -80px;}      
  }
