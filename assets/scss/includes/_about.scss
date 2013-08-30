@@ -21,6 +21,7 @@ html.touch #bg-about {
 }
 
 .tbw_about p {
+    position: relative;
    	z-index: 60;
 }
 
@@ -48,14 +49,20 @@ html.touch #bg-about {
  overflow: hidden; 
 }
 
-
  @media screen and (min-width:769px){
+      #bg-about { height: 784px;}
+      .tbw_about { margin-top: 6em; font-size: 1.1rem;}
+      .tbw_traditional {left: -100px;}
+      .tbw_star {left: -80px;}
+ }
+
+ @media screen and (width:768px){
       #bg-about { 	 height: 784px;}
       .tbw_about {	margin-top: 6em; font-size: 1.1rem;}
-      .tbw_traditional {left: -100px;}
-      .tbw_star {left: -100px;}
+      .tbw_traditional { top: 6em ;left: -60px;}
+      .tbw_star {left: -80px;}
  }
- @media screen and (max-width:768px){
+ @media screen and (max-width:767px){
        #bg-about {	height: 600px;}
       .tbw_about {	margin-top: 2em; font-size: .8rem;}
       .tbw_traditional {left: -80px;}
