@@ -13,6 +13,8 @@ $(document).ready(function() {
 	$("a.anchorLink").anchorAnimate()
 });
 
+$(document).foundation('magellan reveal offcanvas');
+
 jQuery.fn.anchorAnimate = function(settings) {
 
  	settings = jQuery.extend({
@@ -42,6 +44,7 @@ jQuery.fn.anchorAnimate = function(settings) {
         scroll_factor: 0.5
       });
       $(document).foundation();
+      var $expedition;
       $expedition.removeClass('hide').activeClass('active');
     </script>
 
