@@ -16,7 +16,7 @@ hr.tbw_bar {
 }
 
 .tbw_head {
-	font-family: "VeneerThree","alternate-gothic-no-1-d",sans-serif;
+	font-family: $fs_legible;
 	text-transform: uppercase;
 	margin-top:-122px;
 	z-index: 30;
@@ -51,13 +51,14 @@ hr.tbw_bar {
 
 .tbw_head hr { 
 	margin: .15em 0;
+	margin-right: 28px; 
 	border-image: url('img/ropePattern.png') repeat-x top left;
 }
 
 .tbw_nav > li {	
 	margin: 0 5px;
-	font-size: 1.25em;
-	letter-spacing: .01em;
+	font-size: emCalc(22px);
+	letter-spacing: emCalc(.5px);
 }
 
 .tbw_nav, .tba_nav .divider{
@@ -65,7 +66,7 @@ hr.tbw_bar {
 }
 
 .tbw_nav .divider{
-	  margin: 9px 1.5px;
+	  margin: 8px 5px;
 	  width: 14px; 
 	  height: 15px; 
 	  background: url(bullet.png) no-repeat;
@@ -94,7 +95,24 @@ hr.tbw_bar {
 
 header#header {z-index: 10000;}
 
-.tbw_nav_search {margin: 45px 0}
+.tbw_nav_search {
+     margin: 48px 0;
+}
+
+.tbw_nav_search input {
+    border: 3px #666 solid;
+}
+
+.tbw_nav_search input[type=submit]{
+     border: 0; 
+     font: 0/0 a; 
+     text-shadow: none; 
+     color: transparent; 
+     background: url(img/magnifier.gif); 
+     width: 34px; 
+     height: 32px;
+}
+
 @media all and (min-width: 850px) {
 	.tbw_ddnav_pages li.active {font-size: 2em;}
 	header#header { left:15%; }
@@ -126,6 +144,7 @@ header#header {z-index: 10000;}
 // Styles for crabmenu, the fixed left nav
 
 .tbw_crabMenu{
+margin-top: 4px;
 }
 
 .tbw_ddnav{

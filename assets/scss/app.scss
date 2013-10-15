@@ -57,6 +57,9 @@ $fs_legible: 'alternate-gothic-no-1-d', Arial, Helvetica, 'Droid Sans', sans-ser
 .white {
 	color: #fff;
 }
+.red_bk {background-color: $primary;}
+.black_bk {background-color: $black;}
+
 .tbw_bold {
 	font-family: $fs_primary;
 	color: $secondary;

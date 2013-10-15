@@ -57,7 +57,7 @@ li a.zoom-btn {
 	margin-top: 20px;
 	background-color: $drk_bkgd;
 	padding: 10px 10px;
-
+	margin-left: 10px;
 }
 
 .tbw_tweets h2, .tbw_flickr h2{
@@ -78,20 +78,23 @@ li a.zoom-btn {
 	background-repeat: no-repeat;
 }
 
+
 .tbw_tweets ul {
 	list-style: none;
 	margin-left: 10px;
-}
-.tbw_bottom {
-	@extend .tbw_tweets;
-	border-top: 2px $secondary dotted;
-	color: #fff;
-	height: 3em;
 }
 
 .tbw_tweets p a{
 	color: $primary;
 	font-style: normal;
+}
+
+
+.tbw_bottom {
+	@extend .tbw_tweets;
+	border-top: 2px $secondary dotted;
+	color: #fff;
+	height: 3em;
 }
 
 .tbw_bottom {
@@ -139,6 +142,14 @@ font-size: 1.25em;
 	font-weight: normal;
 }
 
+/* Twitter widget
+---------------------------------------------------------- */
+
+.twitter-timeline {
+margin: 0 0;
+}
+
+
 /* Flickr stream
 ---------------------------------------------------------- */
 .tbw_flickr {
@@ -181,4 +192,5 @@ font-size: 1.25em;
   color: $primary;
   padding: 10px 10px;
 }
+
 

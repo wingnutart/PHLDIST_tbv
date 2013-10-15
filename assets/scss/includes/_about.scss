@@ -25,6 +25,10 @@ html.touch #bg-about {
    	z-index: 60;
 }
 
+.tbw_about .tbw_italic {
+    margin-right: 80px;
+}
+
 .tbw_star {
  position: relative;
  top: 25px;
@@ -39,7 +43,7 @@ html.touch #bg-about {
 
 .tbw_traditional {
  position: relative;
- top: 4.5em;
+ top: 2.5em;
  left: -120px;
  width: 180px; 
  height: 180px; 
@@ -52,14 +56,14 @@ html.touch #bg-about {
  @media screen and (min-width:769px){
       #bg-about { height: 784px;}
       .tbw_about { margin-top: 6em; font-size: 1.1rem;}
-      .tbw_traditional {left: -100px;}
+      .tbw_traditional {left: -80px;}
       .tbw_star {left: -80px;}
  }
 
  @media screen and (width:768px){
       #bg-about { 	 height: 784px;}
       .tbw_about {	margin-top: 6em; font-size: 1.1rem;}
-      .tbw_traditional { top: 6em ;left: -60px;}
+      .tbw_traditional { top: 2em ;left: -60px;}
       .tbw_star {left: -80px;}
  }
  @media screen and (max-width:767px){
